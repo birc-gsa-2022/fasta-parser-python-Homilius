@@ -9,10 +9,8 @@ def main():
         "fasta",
         type=argparse.FileType('r')
     )
-    args = argparser.parse_args()
-
-    print(f"Now I need to process the records in {args.fasta}")
-
+    args = argparser.parse_args() 
+    
 
 if __name__ == '__main__':
     main()
