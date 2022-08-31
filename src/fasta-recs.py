@@ -2,7 +2,7 @@ import sys
 
 def read_fasta():
     # load input:
-    inFile = sys.argv[1]  # The list of command line arguments. e.g sys.argv[0] is the script name itself.
+    inFile = sys.argv[1]
     with open(inFile,'r') as j:
         lines = j.readlines()
     
@@ -28,3 +28,5 @@ def read_fasta():
     
     return ''
 read_fasta()
+
+
