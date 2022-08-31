@@ -25,13 +25,13 @@ test_expected() {
 }
 
 echo "Providing coordinates in a file"
-test_expected './get-subseqs $f $coords'
+test_expected 'python3 get-subseqs $f $coords'
 
 echo "Providing coordinates on stdin"
-test_expected 'cat $coords | ./get-subseqs $f'
+test_expected 'cat $coords | python3 get-subseqs $f'
 
 echo "Providing coordinates as '-' (stdin)"
-test_expected 'cat $coords | ./get-subseqs $f -'
+test_expected 'cat $coords | python3 get-subseqs $f -'
 
 if (( success == 1 )); then
     echo "Success."
